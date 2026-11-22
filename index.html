@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111827">
+  <meta name="description" content="RoomieConnect roommate-finding assistant demo">
+  <title>RoomieConnect — Find your kind of home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <main class="landing">
+    <nav class="nav"><a class="brand" href="#top" aria-label="RoomieConnect home"><span class="brand-mark">r</span> roomie<span>connect</span></a><a class="nav-link" href="#how">How it works <span>↗</span></a></nav>
+    <section class="hero" id="top">
+      <div class="hero-copy"><div class="eyebrow"><span class="eyebrow-dot"></span> A better way to find your people</div><h1>Make room for<br><em>good living.</em></h1><p class="hero-text">Find a place that feels right, with people who do too. A little more thoughtful, a lot more like home.</p><div class="hero-actions"><button class="primary-cta" id="open-chat">Find your fit <span>↗</span></button><a class="quiet-link" href="#how">Get to know us <span>↓</span></a></div><div class="social-proof"><div class="avatar-stack"><span>J</span><span>M</span><span>A</span><span>+</span></div><div><strong>Good roommates, good stories.</strong><small>Start yours with a conversation.</small></div></div></div>
+      <div class="hero-art" aria-label="Illustration of a welcoming shared home"><div class="sun"></div><div class="art-note note-one"><span class="note-icon">♡</span><span>Good energy<br><b>lives here</b></span></div><div class="art-note note-two"><span class="note-icon">⌂</span><span>Your next chapter<br><b>starts at home</b></span></div><div class="plant plant-left"><i></i><i></i><i></i><i></i><b></b></div><div class="room"><div class="window"><div class="window-cross"></div><div class="window-view"><span class="cloud"></span><span class="hill"></span></div></div><div class="shelf"><i></i><i></i><i></i></div><div class="picture"><span>slow<br>mornings</span></div><div class="sofa"><div class="sofa-back"></div><div class="sofa-seat"></div><div class="pillow pillow-a"></div><div class="pillow pillow-b"></div><div class="sofa-arm"></div></div><div class="table"><i></i><b></b></div><div class="rug"></div><div class="floor-line"></div></div><div class="plant plant-right"><i></i><i></i><i></i><b></b></div><div class="art-caption"><span>01 / YOUR NEXT CHAPTER</span><span>Made for living, together.</span></div></div>
+    </section>
+    <section class="below" id="how"><div class="below-kicker">A little help finding your place</div><h2>Home is better when<br>it feels like <em>you.</em></h2><p>Tell us what you're looking for. Roomie is here to help you think through the details, find your must-haves, and make shared living feel a little easier.</p><button class="text-cta" id="below-chat">Say hello to Roomie <span>↗</span></button></section>
+    <footer><a class="brand footer-brand" href="#top"><span class="brand-mark">r</span> roomie<span>connect</span></a><span>Find your people. Feel at home.</span><span>© RoomieConnect</span></footer>
+  </main>
+
+  <button class="chat-launcher" id="chat-launcher" aria-label="Open chat with Roomie" aria-expanded="false"><span class="launcher-spark">✳</span><span class="launcher-label">Chat with Roomie</span><span class="launcher-close">×</span></button>
+  <section class="chat-panel" id="chat-panel" role="dialog" aria-modal="false" aria-label="Chat with Roomie" aria-hidden="true">
+    <header class="chat-header"><div class="bot-avatar"><span>r</span><i></i></div><div class="header-copy"><strong>Roomie</strong><span><i></i> Here to help you feel at home</span></div><button class="icon-button minimize-chat" aria-label="Minimize chat">−</button></header>
+    <div class="chat-context"><span class="context-icon">✳</span><span>ROOMIECONNECT ASSISTANT</span><button class="new-chat" title="Start a new chat" aria-label="Start a new chat">↻</button></div>
+    <div class="chat-messages" id="chat-messages" aria-live="polite"><div class="date-divider"><span>TODAY</span></div><article class="message-row bot-row"><div class="mini-avatar">r</div><div class="message-content"><div class="bubble bot-bubble">Hey there! <span class="wave">✳</span> I’m Roomie, your roommate-finding sidekick. What’s on your mind?</div><time>Just now</time><div class="suggestions"><button data-prompt="I'm looking for a roommate. Where should I start?">Find a roommate <span>↗</span></button><button data-prompt="What should I look for in a compatible roommate?">Find my fit <span>↗</span></button><button data-prompt="What are some safety tips for meeting a potential roommate?">Living safely <span>↗</span></button></div></div></article></div>
+    <form class="composer" id="chat-form"><label class="sr-only" for="chat-input">Message Roomie</label><textarea id="chat-input" rows="1" maxlength="2000" placeholder="Ask me anything..."></textarea><div class="composer-bottom"><span class="input-hint">A good home starts with a good question.</span><button class="send-button" type="submit" aria-label="Send message" disabled><span>↑</span></button></div></form>
+    <div class="chat-footnote">Roomie is an AI assistant and can make mistakes.</div>
+  </section>
+</body>
+</html>
